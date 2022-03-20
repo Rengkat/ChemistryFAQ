@@ -10,12 +10,12 @@ function QuestionOutput({ question, answer }) {
         <h4 className="text-xl font-semibold   p-3 block rounded-md">
           {question}
         </h4>
-
+        {/* btns */}
         <button onClick={() => setShowAnswer(!showAnswer)}>
           {showAnswer ? (
-            <FiMinusCircle className="absolute right-2 lg:bottom-3 text-2xl  " />
+            <FiMinusCircle className="absolute right-2  lg:bottom-3 text-2xl  " />
           ) : (
-            <BsPlusCircle className="absolute right-2 shadow-md text-2xl bottom-8 lg:bottom-3 " />
+            <BsPlusCircle className="absolute right-2 shadow-sm text-2xl bottom-4 md:bottom-8 lg:bottom-3 " />
           )}
         </button>
       </section>
